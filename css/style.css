@@ -1,0 +1,217 @@
+*{
+	
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	
+	width:100%;
+	height:100%;
+	font-size:14px;
+	font-weight: normal;
+	
+}
+
+.background{
+	width:100%;
+	height:100%;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: relative;
+	overflow-y:auto;
+	
+}
+
+.nav{
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	left:0;
+	position: sticky;
+	
+}
+
+.nav a{
+	text-decoration:none;
+	font-size:28px;
+	font-family: verdana;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	float:left;
+	display: inline-block;
+	background-color: #6AB4B3;
+	color: #F1D6D5;
+	line-height:90px;
+	text-align:center;
+	transition: 300ms;
+	
+}
+
+a.active, .nav a:hover{
+	background-color: #F1D6D5;
+	color: #6AB4B3;
+	width:100%;
+}
+
+.a{
+	width: 95%;
+}
+
+.b{
+	width: 85%;
+}
+.c{
+	width: 90%;
+}
+.d{
+	width: 85%;
+}
+
+.content{
+	position: absolute;
+	width:930px;
+	min-height:500px;
+	height:auto;
+	/*background-color:red;*/
+	right:0;
+	top:10%;
+	
+}
+
+.home{
+	position: absolute;
+	right:0;
+	bottom:-50px;
+	color : white;
+	font-family: verdana;
+	text-transform;uppercase;
+}
+	
+.home h1{
+	font-size: 100px;
+	padding-right:100px;
+	border-bottom:1px solid white;
+	}
+	
+.home h3{
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+
+.aboutme{
+	position:relative;
+	right:0;
+	top:10px;
+	color:white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display:none;
+}
+
+.aboutme p{
+	font-size:18px;
+	line-height: 28px;
+	margin-bottom:15px;
+	
+}
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left:90%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.portfolio{
+
+	position:absolute;
+	right:0;
+	top:10px;
+	color:white;
+	padding: 0 60px;
+	display: none;
+
+}
+
+.portfolio .image{
+
+	width:30%;
+	margin:4%;
+	float: left;
+}
+
+.image img{
+
+	width:100%;
+	transition: all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.image img:hover{
+
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+
+.contactme{
+
+	position:absolute;
+	right:0;
+	top:10px;
+	color:white;
+	padding: 0 60px;
+	display: none;
+}
+
+.inputText{
+	width:55%;
+	height: 65px;
+	border: 2px solid black;
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+	font-size:20px;
+	padding:0 10px;
+	float:left;
+	margin-bottom:15px;
+}
+
+.inputMessage{
+	width:55%;
+	height: 135px;
+	border: 2px solid black;
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+	font-size:20px;
+	padding:0 10px;
+	float:left;
+}
+
+
+.submitButton{
+	width:160px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	font-size:28px;
+	color: black;
+	border:none;
+	font-weight: bold;
+	float:left;
+	clear:both;
+}

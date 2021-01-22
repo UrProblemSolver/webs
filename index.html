@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>MIDTERMS PORTFOLIO</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class = "background">
+
+	<div class="nav">
+		<a class="a active"href="#"> HOME </a>
+		<a class="b" href="#" > ABOUT ME </a>
+		<a class="c" href="#"> PORTFOLIO </a>
+		<a class="d" href="#"> CONTACT ME </a>
+	</div>
+
+	<div class="content">
+	
+		<div class="home">
+			<h1>I'm Samuel G</h1>
+			<h3> Graphic Designer<h3>
+		</div>
+	
+	<div class="aboutme">
+		<!-- Auto width -->
+			<a href= "resume.docx" download>
+			<button class="btn"><i class="resume"></i> Download Resume</button>
+			</a>
+		<p><h1>GELACIO, SAMUEL ALLEN L.</h1> <br><br>
+		<h2>OBJECTIVE</h2><br>
+		•	To showcase my communicating and coding skills in a professional work driven environment which will enable me to use my acquired skills and will aid me to continuously learn and gain valuable skills as a web developer.<br><br>
+		<h2>EDUCATION</h2> <br> <br>
+		Tertiary<br><br>
+		•	PUP Sta. Rosa Campus          	                                                 (2018 - 2021)<br>
+			Bachelor of Science in Information Technology (3rd year College)<br><br>
+			Senior High School<br><br>
+		•	Sta. Rosa Science and Technology HS                                   (2016 - 2018)<br>
+			STEM Strand<br><br>
+			Junior High School<br><br>
+		•	Sta. Rosa Science and Technology HS                                   (2012 – 2016)<br><br>
+			Elementary            <br>  <br>                 
+		•	JTEN                                                                                         (2008 - 2012)<br><br>
+		
+		<h2>SKILLS </h2><br><br>
+		•	HIGHLY SKILLED WITH COMPUTERS<br>
+		•	PROFESSIONAL WITH MICROSOFT OFFICE APPLICATIONS<br>
+		•	HAVE PROGRAMMING KNOWLEDGE <br>
+		•	HAVE EXCELLENT COMMUNICATING SKILLS<br><br>
+		
+		<h2>WORK EXPERIENCE</h2><br><br>
+		•	PROTEL		(MARCH 2019 – JANUARY 12 2020)<br>
+		    Appointment Settler<br><br>
+		•	DEPED REGIONAL OFFICE		(AUGUST – NOVEMBER 2018)<br>
+            Work Immersion <br><br>
+		•	SPES		 (2017) <br> <br>
+		
+		<h2>SEMINARS ATTENDED</h2><br><br>
+		IT/SOCIAL AND LEGAL ISSUES (IT SEMINAR)<br>
+		ZERO TO ONE: RECOGNIZING INNOVATION (IT SEMINAR)<br><br>
+		
+		<h2>CHARACTER REFERENCES</h2><br><br>
+		•	ERNESTO BALDOZA         (SCI-TECH TEACHER)<br>
+		•	ARWIN NUCUM             (PUP STA. ROSA CAMPUS PROFESSOR)<br> <br>
+		
+		</p>
+		</div>
+
+		<div class="portfolio">
+			<div class="image">
+				<img src="images/1.jpg" />
+			</div>
+			<div class="image">
+				<img src="images/2.jpg" />
+			</div>
+			<div class="image">
+				<img src="images/3.jpg" />
+			</div>
+			<div class="image">
+				<img src="images/4.jpg" />
+			</div>
+			<div class="image">
+				<img src="images/5.jpg" />
+			</div>
+			<div class="image">
+				<img src="images/6.jpg" />
+			</div>
+		</div>
+
+		<div class="contactme">
+			<div class="contactform">
+				<form action="" method ="post">
+					<input type="text" name"" class="inputText" value ="First Name">	
+					<input type="text" name"" class="inputText" value ="Last Name">	
+					<input type="text" name"" class="inputText" value ="Email">
+					<textarea cols="4" rows="6" class="inputMessage"> Your Message...</textarea>	
+					<input type="button" name="" class="submitButton"  value ="Submit">
+				</form>
+			</div>
+		</div>		
+
+
+	</div>
+
+	</div>
+	
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('a').click(function (){
+		//alert("I am Click")
+			var selected= $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutme = $('.aboutme'),
+		$portfolio = $('.portfolio'),
+		$contactme = $('.contactme');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$portfolio.fadeOut();
+			$contactme.fadeOut();
+		});
+		$b.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeIn();
+			$portfolio.fadeOut();
+			$contactme.fadeOut();
+		});
+		$c.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$portfolio.fadeIn();
+			$contactme.fadeOut();
+		});
+		$d.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$portfolio.fadeOut();
+			$contactme.fadeIn();
+		});
+		
+		}); 
+		
+</script>
+	
+	
+	
+</body>
+
+</html>
